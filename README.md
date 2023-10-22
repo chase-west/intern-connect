@@ -1,2 +1,2 @@
 # intern-connect
-Connecting high school students to real internships. 
+Empowering high school students to find tech internships 
