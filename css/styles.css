@@ -29,10 +29,7 @@ body {
   border: var(--accent) 1px solid;
   background: var(--primary);
   transition: all 0.5s ease;
-}
-
-.container:hover{
-  transform: translate(-50%, -50%) scale(1.1);
+  text-align: start;
 }
 
 .container h1 {
@@ -72,3 +69,74 @@ body {
 #learn {
   background-color: var(--primary);
 }
+
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 1em 3em;
+  background-color: var(--accent);
+  transition: all 0.5s ease;
+  border-bottom: black 0.15em solid;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-item {
+  margin-right: 20px; 
+  transition: all 0.3s; 
+  display: flex; 
+  align-items: center; 
+}
+
+.nav-item:last-child {
+  margin-right: 0; 
+}
+
+.nav-icon {
+  width: 16px; 
+  height: 16px;
+  margin-left: 0.3em;
+  vertical-align: middle;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 1427px) {
+  .container {
+    top: 25%;
+    left: 50%;
+  }
+  .about {
+    top: 60%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 643px) {
+  .container {
+    padding: none;
+  }
+
+  .container h1 {
+    font-size: 2em;
+    text-align: justify;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .container p {
+    font-size: 1em;
+  }
+
+  .about img {
+    max-width: 100%;
+  }
+}
+
