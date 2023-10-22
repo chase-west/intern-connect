@@ -9,6 +9,7 @@ body {
   background-color: var(--background);
 }
 
+/* Global color styling */
 :root {
   --text: #011d32;
   --background: #e1f2ff;
@@ -18,58 +19,7 @@ body {
 
 }
 
-.container {
-  position: fixed;
-  top: 50%;
-  left: 27%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-  border-radius: 18px;
-  padding: 2em 3em;
-  border: var(--accent) 1px solid;
-  background: var(--primary);
-  transition: all 0.5s ease;
-  text-align: start;
-}
-
-.container h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 0.5rem;
-}
-
-.container p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--text);
-}
-
-.about {
-  position: fixed;
-  top: 50%;
-  left: 73%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-  border-radius: 18px;
-  padding: 2em 3em;
-  transition: all 0.5s ease;
-}
-
-.about button {
-  border: none;
-  padding: 1.7em 1.7em;
-  border-radius: 18px;
-}
-
-#explore{
-  background-color: var(--secondary);
-}
-
-#learn {
-  background-color: var(--primary);
-}
-
+/* Navbar Styling */
 .navbar {
   display: flex;
   width: 100%;
@@ -98,7 +48,7 @@ body {
 .nav-icon {
   width: 16px; 
   height: 16px;
-  margin-left: 0.3em;
+  margin-left: 0.2em;
   vertical-align: middle;
 }
 
@@ -106,36 +56,110 @@ body {
   transform: scale(1.1);
 }
 
+/* Intern Connect Section Styling */
+.intern-connect {
+  position: fixed;
+  top: 50%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 2em 3em;
+  border: var(--accent) 3px solid;
+  transition: all 0.5s ease;
+  text-align: start;
+}
+
+.intern-connect h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.intern-connect p {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: var(--text);
+}
+
+/*Button Section Styling */
+.description {
+  position: fixed;
+  top: 50%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 2em 3em;
+  transition: all 0.5s ease;
+}
+
+.description button {
+  border: none;
+  padding: 1.2em 1.4em;
+  border-radius: 18px;
+  margin-right: 0.5em;
+}
+
+#explore:hover, #learn:hover {
+  transition: 0.3s;
+  transform: scale(1.08);
+}
+
+#explore{
+  background-color: var(--secondary);
+}
+
+#learn {
+  background-color: var(--primary);
+}
+
+/*About Section Styling */
+#about {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border: var(--accent) 3px solid;
+  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  border-radius: 18px;
+  padding: 2em 3em;
+  transition: all 0.5s ease;
+  text-align: start;
+}
 
 
+/* Media Queries */
 @media screen and (max-width: 1427px) {
-  .container {
+  .intern-connect {
     top: 25%;
     left: 50%;
   }
-  .about {
+  .description {
     top: 60%;
     left: 50%;
   }
 }
 
 @media screen and (max-width: 643px) {
-  .container {
+  .intern-connect {
     padding: none;
   }
 
-  .container h1 {
+  .intern-connect h1 {
     font-size: 2em;
     text-align: justify;
     display: inline-block;
     width: 100%;
   }
 
-  .container p {
+  .intern-connect p {
     font-size: 1em;
   }
 
-  .about img {
+  .description img {
     max-width: 100%;
   }
 }
