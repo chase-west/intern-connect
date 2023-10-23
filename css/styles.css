@@ -35,7 +35,7 @@ body {
 }
 
 .nav-item {
-  margin-right: 20px; 
+  margin-right: 1.2em; 
   transition: all 0.3s; 
   display: flex; 
   align-items: center; 
@@ -71,11 +71,15 @@ body {
 }
 
 .intern-connect h1 {
-  font-size: 3em;
+  font-size: 7em; /* Fixed font size, adjust as needed */
   font-weight: 700;
   color: var(--text);
   margin-bottom: 0.5rem;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis (...) when text overflows */
 }
+
 
 .intern-connect p {
   font-size: 1.5em;
@@ -87,7 +91,7 @@ body {
 .description {
   position: fixed;
   top: 50%;
-  left: 73%;
+  left: 70%;
   transform: translate(-50%, -50%);
   overflow: hidden;
   border-radius: 18px;
@@ -95,11 +99,21 @@ body {
   transition: all 0.5s ease;
 }
 
+.description img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  margin-bottom: 1em;
+  border: var(--accent) 0.3em solid;
+}
+
 .description button {
+  scale: 1.4;
   border: none;
   padding: 1.2em 1.4em;
   border-radius: 18px;
-  margin-right: 0.5em;
+  margin-left: 4em;
+  margin-right: 0.4em;
 }
 
 #explore:hover, #learn:hover {
@@ -143,24 +157,43 @@ body {
   }
 }
 
+@media screen and (max-width: 1643px) {
+  .intern-connect h1 {
+    font-size: 4em;
+  }
+  .description {
+    transform: translate(-34%, -30%);
+    scale: 1.3;
+  }
+  .description button {
+    overflow: hidden;
+    white-space: nowrap;
+    scale: 1.1;
+    transform: translate(5%, -5%);
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
+
 @media screen and (max-width: 643px) {
-  .intern-connect {
-    padding: none;
+
+  .navbar {
+    
   }
 
   .intern-connect h1 {
     font-size: 2em;
-    text-align: justify;
-    display: inline-block;
-    width: 100%;
   }
 
   .intern-connect p {
     font-size: 1em;
   }
-
+  
   .description img {
-    max-width: 100%;
+    scale: 0.5;
+  }
+  .description button {
+    
   }
 }
 
