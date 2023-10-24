@@ -9,6 +9,8 @@ body {
   background-color: var(--background);
 }
 
+
+
 /* Global color styling */
 :root {
   --text: #011d32;
@@ -17,6 +19,21 @@ body {
   --secondary: #c8e7fe;
   --accent: #048df6;
 
+}
+
+/*Style for the footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.6em 0;
+  background-color: var(--primary);
+  border-top: black 0.15em solid;
+}
+
+footer img {
+  width: 1.5em;
+  margin-left: 1em;
 }
 
 /* Navbar Styling */
@@ -56,6 +73,38 @@ body {
   transform: scale(1.1);
 }
 
+/* Dark Mode Styling */
+
+#theme-toggle-button {
+  margin-left: auto;
+  padding: 0.5em;
+  border: black 0.11em solid;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2.7px 5.4px 5.4px hsl(0deg 0% 0% / 0.42);
+}
+
+#theme-toggle-button:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+
+body.dark {
+  background-color: black;
+  transition: all 0.5s ease;
+}
+
+body.dark .intern-connect h1, body.dark .intern-connect p {
+  color: white;
+  transition: 0.5s ease;
+}
+
+body.dark #creator {
+  color: white;
+}
+
 /* Intern Connect Section Styling */
 .intern-connect {
   position: fixed;
@@ -65,7 +114,7 @@ body {
   overflow: hidden;
   border-radius: 18px;
   padding: 2em 3em;
-  border: var(--accent) 3px solid;
+  border: var(--primary) 3px solid;
   transition: all 0.5s ease;
   text-align: start;
 }
@@ -92,7 +141,7 @@ body {
   position: fixed;
   top: 50%;
   left: 70%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   overflow: hidden;
   border-radius: 18px;
   padding: 2em 3em;
@@ -144,6 +193,15 @@ body {
   text-align: start;
 }
 
+#creator {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis (...) when text overflows */
+}
 
 /* Media Queries */
 @media screen and (max-width: 1427px) {
@@ -152,9 +210,10 @@ body {
     left: 50%;
   }
   .description {
-    top: 60%;
+    margin-top: 3em;
     left: 50%;
   }
+
 }
 
 @media screen and (max-width: 1643px) {
@@ -175,10 +234,29 @@ body {
   }
 }
 
+@media screen and (max-width: 811px) {
+  .description button {
+    transform: translate(0%, 0%);
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    transform: scale(0.8);
+    margin-top: -4em;
+    margin-right: 0em;
+  }
+}
+
 @media screen and (max-width: 643px) {
 
-  .navbar {
-    
+  .navbar a, .nav-icon{
+    font-size: 0.7em;
+  }
+
+  .nav-item:first-child {
+    margin-left: -3em;
+  }
+
+  #theme-toggle-button {
+    font-size: 0.7em;
   }
 
   .intern-connect h1 {
@@ -190,7 +268,7 @@ body {
   }
   
   .description img {
-    scale: 0.5;
+    transform: scale(0.8);
   }
   .description button {
     

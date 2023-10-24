@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/dark-mode.js"></script>
   <link type="text/css" rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,35 +33,43 @@
         <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
       </svg>
     </a>
-  
+
     <a class="nav-item" href="about.html">
       <span>About</span>
       <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
         <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
       </svg>
     </a>
-
+    
     <a class="nav-item" href="contact.html">
       <span>Contact</span>
       <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
         <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
       </svg>
     </a>
+    
+    <button id="theme-toggle-button" onclick="switchMode()">Dark Mode</button>
 
   </nav>
   
   <main>
-    <div class="intern-connect">
-      <h1>Intern Connect</h1>
-      <p>Connecting high school students to internship opportunities</p>
-  </div>
-
-    <div class="description">
-      <img src="images/istockphoto-1363276581-612x612.jpg" alt="People Coding">
-      <a href="internships.html"><button id="explore">Explore Internships</button></a>
-      <a href="about.html"><button id="learn">Learn More</button></a>
-    </div>
+    <section class="container">
+      <div class="intern-connect">
+        <h1>Intern Connect</h1>
+        <p>Connecting high school students to internship opportunities</p>
+      </div>
+  
+      <div class="description">
+        <img src="images/istockphoto-1363276581-612x612.jpg" alt="People Coding">
+        <a href="internships.html"><button id="explore">Explore Internships</button></a>
+        <a href="about.html"><button id="learn">Learn More</button></a>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <a href="https://github.com/chase-west/intern-connect" target="_blank"><img src="images/github-logo.png" alt="Github Page"></a>
+  </footer>
 
 </body>
 </html>
