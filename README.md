@@ -1,6 +1,9 @@
 # intern-connect🧑🖥️
 Welcome to **Intern Connect**, a platform dedicated to empowering high school students in their quest to secure valuable technology internships. Our mission is to bridge the gap between enthusiastic young learners and the ever-evolving world of technology by providing a comprehensive resource for discovering and pursuing internship opportunities.
 
+![image](https://github.com/chase-west/intern-connect/assets/57733840/310fc12d-dfce-41e1-892a-e78b48c1963d)
+
+
 # About Intern Connect
 At Intern Connect, we understand the importance of gaining practical experience early in your academic journey. Our platform is designed to help you:
 
