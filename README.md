@@ -1,4 +1,4 @@
-# intern-connect
+# intern-connect🧑🖥️
 Welcome to **Intern Connect**, a platform dedicated to empowering high school students in their quest to secure valuable technology internships. Our mission is to bridge the gap between enthusiastic young learners and the ever-evolving world of technology by providing a comprehensive resource for discovering and pursuing internship opportunities.
 
 # About Intern Connect
