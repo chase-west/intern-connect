@@ -179,6 +179,7 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
 
 /*About Section Styling */
 #about {
+  
   position: fixed;
   top: 40%;
   overflow: hidden;
@@ -186,6 +187,7 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   text-align: start;
 }
 #about h1 {
+  margin-left: 0.2em;
   transition: ease 0.5s;
   font-size: 11em;
   position: relative;
@@ -198,6 +200,7 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
 }
 
 #desc {
+  margin-left: 1.5em;
   border-bottom: 0.2em solid transparent; /* Set the border width and make it transparent */
   border-image: linear-gradient(to right, var(--primary), var(--secondary));
   border-image-slice: 1; /* Ensure the entire border is filled with the gradient */
