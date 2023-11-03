@@ -40,6 +40,7 @@ loader.load(
   }
 );
 
+
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -78,6 +79,7 @@ function animate() {
   if (initialAnimationTime < initialAnimationDuration) {
     // Perform the initial animation here, e.g., raise the object
     object.position.z += 0.2;
+    object.rotation.y += 0.08;
   } else if (!initialAnimationComplete) {
     // The initial animation is complete, stop the initial animation and start continuous animation
     initialAnimationComplete = true;
