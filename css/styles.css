@@ -338,5 +338,17 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
     margin-left: 0.2em;
   }
 
+  #contact h1{
+    font-size: 0.7em;
+  }
+  #contact p {
+    font-size: 0.2em;
+  }
+
+  #contact {
+    margin: 0.1em;
+    padding: 0.2em;
+  }
+
 }
 
