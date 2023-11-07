@@ -36,6 +36,11 @@ footer img {
   margin-left: 1em;
 }
 
+#copyright {
+  text-align: center;
+  color: var(--text);
+}
+
 /* Navbar Styling */
 .navbar {
   display: flex;
