@@ -214,6 +214,8 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
 
 }
 
+/* CSS for the model within the three.js canvas container */
+
 /* CSS for the three.js canvas container */
 #container3D canvas{
   position: relative; 
