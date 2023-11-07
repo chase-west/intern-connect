@@ -96,7 +96,7 @@ body.dark {
   transition: all 0.5s ease;
 }
 
-body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, body.dark #about p {
+body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, body.dark #about p, body.dark #contact, body.dark #contact a {
   color: white;
   transition: 0.5s ease;
 }
@@ -206,6 +206,7 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   padding: 0.5em;
   padding-bottom: 0.01em;
   font-size: 1.7em;
+
 }
 
 /* CSS for the model within the three.js canvas container */
@@ -213,10 +214,38 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
 /* CSS for the model within the three.js canvas container */
 
 /* CSS for the three.js canvas container */
-#container3D {
-  position: relative;
+#container3D canvas{
+  position: relative; 
+  display: flex;
+  top: -48%;
+  left: -22%;
 }
 
+#contact {
+  color: var(--text);
+  font-size: 4em;
+  top: -50%;
+  padding: 0.5em;
+  margin-top: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
+  border: var(--primary) 0.1em solid;
+}
+
+
+/* Styling rules for contact page */ 
+#contact h1 {
+  text-align: center;
+}
+
+#contact p, #contact a{
+  text-align: center;
+  margin-right: 0.1em;
+}
+
+#contact a {
+  color: var(--text);
+}
 
 
 /* Media Queries */
@@ -264,6 +293,13 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
     margin-right: 0em;
     font-size: 0.8em;
   }
+
+  #contact h1{
+    font-size: 1em;
+  }
+  #contact p {
+    font-size: 0.5em;
+  }
 }
 
 @media screen and (max-width: 643px) {
@@ -292,5 +328,29 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
     transform: scale(1.3);
     margin-bottom: 2.3em;
   }
+  #container3D canvas {
+    transform: translate(-5%, -60%);
+    scale: 0.8;
+  }
+
+  #about h1 {
+    font-size: 11em;
+  }
+  #desc {
+    margin-left: 0.2em;
+  }
+
+  #contact h1{
+    font-size: 0.7em;
+  }
+  #contact p {
+    font-size: 0.2em;
+  }
+
+  #contact {
+    margin: 0.1em;
+    padding: 0.2em;
+  }
+
 }
 

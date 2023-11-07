@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../../Downloads/retro_computer"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "intern-connect"
+	}
+}
