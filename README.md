@@ -21,8 +21,9 @@ At Intern Connect, we understand the importance of gaining practical experience 
 # Getting Started
 Ready to kickstart your tech journey? Follow these simple steps:
 
-1. If using VsCode I would recommend downloading the live server extension and just using that.
-2. Otherwise, open the html files in the browser and refresh to see updates. 
+1. If using VsCode I would recommend downloading the live server extension and just use that to view the website.
+2. Download bootstrap here: https://getbootstrap.com/.
+3. Otherwise, open the html files in the browser and refresh to see updates. 
 
 # Contribution
 Intern Connect is an open-source project, and we welcome contributions from the community. If you're passionate about helping high school students find tech internships, please consider contributing to our platform. Feel free to fork this repository, make improvements, and create a pull request, or give a suggestion of avaliable internships in the [internship-list](https://github.com/chase-west/intern-connect/blob/main/internships-list.txt) file.
