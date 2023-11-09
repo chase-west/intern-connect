@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -34,11 +35,14 @@ footer {
 footer img {
   width: 1.5em;
   margin-left: 1em;
+  margin-bottom: -1.5em;
 }
 
 #copyright {
   text-align: center;
   color: var(--text);
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* Navbar Styling */
