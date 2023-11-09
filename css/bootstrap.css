@@ -8600,7 +8600,7 @@ textarea.form-control-lg {
 
 .py-5 {
     padding-top: 3rem!important;
-    padding-bottom: 3rem!important
+    /* padding-bottom: 3rem!important; */
 }
 
 .pt-0 {
@@ -8863,6 +8863,12 @@ textarea.form-control-lg {
 
 .text-end {
     text-align: right!important
+}
+
+.py-5 {
+  border-bottom: 0.2em solid transparent;
+  border-image: linear-gradient(to right, var(--primary), var(--secondary));
+  border-image-slice: 1;
 }
 
 .text-center {
@@ -9273,11 +9279,6 @@ textarea.form-control-lg {
 .bg-body-secondary {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-secondary-bg-rgb),var(--bs-bg-opacity))!important
-}
-
-.bg-body-tertiary {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important
 }
 
 .bg-opacity-10 {
