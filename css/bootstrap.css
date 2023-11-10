@@ -208,7 +208,7 @@ hr {
 }
 
 .h1,h1 {
-    font-size: calc(1.375rem + 1.5vw)
+    font-size: calc(2rem + 1.5vw)
 }
 
 @media (min-width: 1200px) {
@@ -8863,12 +8863,6 @@ textarea.form-control-lg {
 
 .text-end {
     text-align: right!important
-}
-
-.py-5 {
-  border-bottom: 0.2em solid transparent;
-  border-image: linear-gradient(to right, var(--primary), var(--secondary));
-  border-image-slice: 1;
 }
 
 .text-center {

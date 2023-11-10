@@ -107,7 +107,7 @@ body.dark {
   transition: all 0.5s ease;
 }
 
-body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, body.dark #about p, body.dark #contact, body.dark #contact a {
+body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, body.dark #about p, body.dark #contact, body.dark #contact a, body.dark #intern-desc{
   color: white;
   transition: 0.5s ease;
 }
@@ -217,10 +217,7 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   padding: 0.5em;
   padding-bottom: 0.01em;
   font-size: 1.7em;
-
 }
-
-/* CSS for the model within the three.js canvas container */
 
 /* CSS for the three.js canvas container */
 #container3D canvas{
@@ -301,10 +298,17 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   display: block !important;
 }
 
+.py-lg-5 {
+  border-bottom: 0.2em solid transparent; 
+  border-image: linear-gradient(to right, var(--primary), var(--secondary)); 
+  border-image-slice: 1;
+}
+
 
 /* Styling rules for contact page */ 
 #contact {
   transition: all 0.5s ease;
+  font-size: 3em;
 }
 
 #contact h1 {
@@ -312,6 +316,7 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
 }
 
 #contact p, #contact a{
+  margin-bottom: 0.2em;
   text-align: center;
   margin-right: 0.1em;
 }
