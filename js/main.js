@@ -43,13 +43,13 @@ loader.load(
 
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(1100, 700);
 
 //Add the renderer to the DOM
 document.getElementById("container3D").appendChild(renderer.domElement);
 //Set how far the camera will be from the 3D model
 camera.position.z = objToRender === "dino" ? 40 : 500;
-camera.position.set(0, 1, 6.2); // Adjust the position as needed
+camera.position.set(-1, 0.2, 4.2); // Adjust the position as needed
 
 // Create Ambient Light
 const ambientLight = new THREE.AmbientLight(0x404040); // Soft white light
@@ -88,7 +88,7 @@ function animate() {
   if (initialAnimationComplete) {
     // Make the computer move automatically
     if (object && objToRender === "retro_computer") {
-      object.rotation.y += 0.005; // Rotate the computer
+      object.rotation.y += 0.01; // Rotate the computer
     }
   }
 

@@ -218,12 +218,24 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   font-size: 1.7em;
 }
 
+#container3D {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(30%, -50%);
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 2em 3em;
+  transition: all 0.5s ease;
+}
+
 /* CSS for the three.js canvas container */
 #container3D canvas{
   position: relative; 
   display: flex;
   top: -48%;
   left: -22%;
+  scale: 1.4;
 }
 
 #contact {
@@ -235,6 +247,13 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   margin-left: 2em;
   margin-right: 2em;
   border: var(--primary) 0.1em solid;
+}
+
+/*View ports for computer model*/
+@media screen and (max-width: 2564){
+  #container3D canvas{
+    scale: 0.1;
+  }
 }
 
 /* Internships bootstrap styling */
