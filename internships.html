@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  <link rel="icon" type="image/x-icon" href="/images/computer-man.png">
   <title>Intern-Connect</title>
-</head>
 <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -76,16 +75,55 @@
         <h1 class="fw-light"> Internships</h1>
         <p class="lead text-body-secondary">Look below to find a list of tech internships available for students.</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">View Saved Internships</a>
+          <a href="saved-internships.html" class="btn btn-primary my-2">View Saved Internships</a>
+          <a onclick="toggleDropdown()" id="dropdownButton" class="btn btn-secondary my-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </a>
+
+        <script>
+          function toggleDropdown() {
+            console.log("hello");
+            var dropdownContent = document.getElementById('sortableDropdown');
+            dropdownContent.classList.toggle('hidden');
+          }
+        </script>        
+
+          <div id="sortableDropdown" class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+            <div class="dropdown-menu d-block position-static pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px" data-bs-theme="light">
+              <form class="p-2 mb-2 bg-body-tertiary border-bottom">
+                <input type="search" class="form-control" autocomplete="false" placeholder="Type to filter...">
+              </form>
+              <ul class="list-unstyled mb-0">
+                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                  <span class="d-inline-block bg-success rounded-circle p-1"></span>
+                  Action
+                </a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                  <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+                  Another action
+                </a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                  <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+                  Something else here
+                </a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                  <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                  Separated link
+                </a></li>
+              </ul>
+            </div>
         </p>
       </div>
     </div>
   </section>
 
+
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        
 
             <div class="col">
               <div class="card shadow-sm">
@@ -99,7 +137,7 @@
                               <a href="https://www.bu.edu/summer/high-school-programs/rise-internship-practicum/internship-track/" target="_blank" class="btn btn-sm btn-outline-primary">View</a>
                               <button type="button" class="btn btn-sm btn-outline-primary">Save</button>
                           </div>
-                          <small class="text-body-secondary">9 mins</small>
+                          <small class="text-body-secondary">Added 11/10/23</small>
                       </div>
                   </div>
               </div>
@@ -266,4 +304,5 @@
     </div>
   </footer>
 
-</body></html>
+</body>
+</html>
