@@ -5,11 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/dark-mode.js"></script>
   <link type="text/css" rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/index.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/images/computer-man.png">
   <title>Intern-Connect</title>
+
+  <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+  <script type="module">
+    import { initializeApp } from 'firebase/app';
+
+// TODO: Replace the following with your app's Firebase project configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCP0indUsmPAOgTzBLXXcdkt9HKNLxPasI",
+  authDomain: "intern-connect-a22fe.firebaseapp.com",
+  projectId: "intern-connect-a22fe",
+  storageBucket: "intern-connect-a22fe.appspot.com",
+  messagingSenderId: "262827896525",
+  appId: "1:262827896525:web:bc130eb3f206ad92b3c384",
+  measurementId: "G-Z9SNZFG4YK"
+};
+
+const app = initializeApp(firebaseConfig);
+  </script>
+
+  <script src="js/index.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
@@ -61,6 +82,7 @@
   </nav>
   
   <main>
+    
   </main>
 
   <footer>

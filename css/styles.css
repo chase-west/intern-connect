@@ -19,11 +19,6 @@ body {
   --accent: #048df6;
 }
 
-/* Styling rules for dropdown  */
-.hidden {
-  display: none;
-}
-
 /*Style for the footer */
 footer {
   height:4.2em;
@@ -259,7 +254,7 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   }
 }
 
-/* Internships bootstrap styling */
+/* Internships styling */
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -325,6 +320,31 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   border-image-slice: 1;
 }
 
+/* Styling rules for dropdown  */
+
+/* Initial styles for hidden state */
+.dropdown-menu.d-block.position-static.pt-0.mx-0.rounded-3.shadow.overflow-hidden.w-280px {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: 0.3s ease;
+  visibility: hidden;
+}
+
+/* Styles for the shown state */
+.dropdown-menu.d-block.position-static.pt-0.mx-0.rounded-3.shadow.overflow-hidden.w-280px.shown {
+  opacity: 1;
+  transform: translateY(15px);
+  visibility: visible;
+}
+
+.dropdown-container .dropdown-button.btn.btn-secondary.my-2.active {
+  width: 280px;
+  transition: 0.3s ease;
+}
+
+.btn-group {
+  display: flex;
+}
 
 /* Styling rules for contact page */ 
 #contact {

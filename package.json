@@ -1,5 +1,16 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.2"
-  }
+    "bootstrap": "^5.3.2",
+    "firebase": "^10.6.0"
+  },
+  "name": "intern-connect",
+  "description": "Welcome to **Intern Connect**, a platform dedicated to empowering high school students in their quest to secure valuable technology internships. Our mission is to bridge the gap between enthusiastic young learners and the ever-evolving world of technology by providing a comprehensive resource for discovering and pursuing internship opportunities.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
