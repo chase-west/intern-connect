@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/dark-mode.js"></script>
   <link type="text/css" rel="stylesheet" href="css/styles.css">
-  <script type="module" src="js/index.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/images/computer-man.png">
+  <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
   <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
   <title>Intern-Connect</title>
 </head>
@@ -62,28 +63,32 @@
 
   </nav>
   
-  <body class="text-center"></body>
-    <form class="form-signin">
-      <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
+  <main>
+    <form>
+      <div class="form-group">
+        <label for="InputEmail">Email address</label>
+        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      <div class="form-group">
+        <label for="InputPassword">Password</label>
+        <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+  </main>
+
   <footer>
     <a href="https://github.com/chase-west/intern-connect" target="_blank"><img src="images/github-logo.png" alt="Github Page"></a>
     <div id="copyright">
       <p>&copy;Intern Connect 2023</p>
     </div>
   </footer>
+
 </body>
 <script type="module">
   // Import the functions you need from the SDKs you need
@@ -112,6 +117,26 @@
   const analytics = getAnalytics(app);
   const database = getDatabase(app);
   const auth = getAuth();
+
+  submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('InputEmail').value;
+    const password = document.getElementById('InputPassword').value;
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        alert("Signed up!");
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        alert(errorMessage);
+        // ..
+      });
+  });
  
 </script>
 </html>
