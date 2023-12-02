@@ -3908,6 +3908,7 @@ textarea.form-control-lg {
 }
 
 .dropdown-menu.show {
+    margin-top: 0.036em;
     display: block
 }
 
