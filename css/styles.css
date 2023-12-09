@@ -87,13 +87,17 @@ footer img {
 /* Dark Mode Styling */
 
 #theme-toggle-button {
+  font-size: 1em;
   margin-left: auto;
   padding: 0.5em;
+  margin-top: 1em;
   border: black 0.11em solid;
   background-color: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 2.7px 5.4px 5.4px hsl(0deg 0% 0% / 0.42);
+  height: 100%;
+  width: fit-content;
 }
 
 #theme-toggle-button:hover {
@@ -111,9 +115,6 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   color: white;
   transition: 0.5s ease;
 }
-
- 
-
 
 /* Intern Connect Section Styling */
 .intern-connect {
@@ -254,16 +255,82 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   scale: 1.4;
 }
 
-#contact {
-  color: var(--text);
+#contact h1{
+  margin-left: 0.05em;
+  top: 40%;
   font-size: 4em;
-  top: -50%;
-  padding: 0.5em;
-  margin-top: 5em;
-  margin-left: 2em;
-  margin-right: 2em;
-  border: var(--primary) 0.1em solid;
+  position: absolute;
+  display: inline;
+  background: linear-gradient(to right, var(--primary), var(--accent)); 
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  -webkit-text-fill-color: transparent; 
 }
+
+#contact p {
+  top: 55%;
+  font-size: 0.7em;
+  margin-left: 0.5em;
+  position: absolute;
+  display: inline;
+} 
+
+#contact-form {
+  bottom: 6%;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 2em 3em;
+  transition: all 0.5s ease;
+  text-align: start;
+}
+
+#form ul {
+  padding: 1em;
+  padding-right: 7em;
+  list-style-type: none;
+}
+
+#form li {
+  display: inline;
+}
+
+#form input {
+  margin-bottom: 0.5em;
+  width: 100%;
+  padding: 0.5em;
+  border: 0.2em solid transparent; 
+  border-image: linear-gradient(to right, var(--primary), var(--secondary));
+  border-image-slice: 1; 
+  font-size: 1.2em;
+}
+
+#form textarea {
+  width: 100%;
+  height: 10em;
+  padding: 0.5em;
+  border: 0.2em solid transparent; 
+  border-image: linear-gradient(to right, var(--primary), var(--secondary));
+  border-image-slice: 1; 
+  font-size: 1.2em;
+}
+
+#form button {
+  padding: 0.5em;
+  border: 0.2em solid transparent; 
+  border-image: linear-gradient(to right, var(--primary), var(--secondary));
+  border-image-slice: 1; 
+  font-size: 1.2em;
+  margin-top: 1em;
+  background-color: white;
+}
+
+#form button:hover {
+  transition: 0.3s;
+  transform: scale(1.08);
+  cursor: pointer;
+} 
 
 /*View ports for computer model*/
 @media screen and (max-width: 2564){
@@ -358,7 +425,7 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   color: var(--text);
 }
 
-/* Media Queries */
+/*Desktop viewport*/
 @media screen and (max-width: 1427px) {
   .intern-connect {
     top: 25%;
@@ -373,8 +440,21 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
     font-size: 0.8em;
   }
 
-}
+  #contact h1{
+    font-size: 2em;
+    top: 47%;
+  }
 
+  #contact p {
+    font-size: 0.5em;
+  }
+
+  #contact-form {
+    scale: 0.8;
+  }
+
+}
+/*Large desktop*/
 @media screen and (max-width: 1643px) {
   .intern-connect h1 {
     font-size: 4em;
@@ -406,7 +486,6 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   }
 
 }
-
 @media screen and (max-width: 811px) {
   .description button {
     transform: translate(0%, 0%);
@@ -425,7 +504,7 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
     font-size: 0.5em;
   }
 }
-
+/*Mobile*/
 @media screen and (max-width: 643px) {
 
   .navbar a, .nav-icon{
@@ -465,16 +544,15 @@ body.dark .intern-connect h1, body.dark .intern-connect p, body.dark #creator, b
   }
 
   #contact h1{
-    font-size: 0.7em;
+    font-size: 1em;
+    top: 50%;
   }
   #contact p {
-    font-size: 0.2em;
+    font-size: 0.4em;
   }
 
-  #contact {
-    margin: 0.1em;
-    padding: 0.2em;
-  }
+
+
 
 }
 

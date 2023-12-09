@@ -43,11 +43,55 @@
 
   </nav>
   
-  <main id="contact">
-    <h1>Contact Us</h1>
-    <p>We appreciate any information on new internship opportunities for our students!</p>
-    <p>If you have any ideas Send an <a href="mailto:chasewestbusiness@gmail.com">Email</a> Or Contribute <a href="https://github.com/chase-west/intern-connect">here</a></p>
+  <main>
+    <div id="contact">
+      <h1>Contact Us</h1>
+      <p>Have a question or suggestion? Fill out the form below and I'll get back to you as soon as possible.</p>
+    </div>
   </main>
+<section id="contact-form">
+    <form>
+      <div id="form">
+        <ul>
+          <li>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </li>
+          <li>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </li>
+          <li>
+            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+          </li>
+          <li>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+          </li>
+          <li>
+            <button type="submit" id="submit">Submit</button>
+          </li>
+          <li>
+            <button type="reset" id="reset">Reset</button>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('myForm');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            form.reset();
+        });
+
+        var resetButton = document.getElementById('reset');
+        resetButton.addEventListener('click', function () {
+            form.reset();
+        });
+    });
+  </script>
+
 
   <footer>
     <a href="https://github.com/chase-west/intern-connect" target="_blank"><img src="images/github-logo.png" alt="Github Page"></a>
